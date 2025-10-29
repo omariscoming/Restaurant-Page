@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Permanent+Marker&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+body {
+    background-color: #fff3ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .header > h1{
+    font-family: bungee, cursive;
+    color: #187969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > button {
+    font-family: bungee, cursive;
+    color: white;
+    width: 22%;
+    height: 55px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #187969;
+    transition: ease-out 0.3s;
+    font-size: 25px;
+}
+
+nav > button:hover {
+    background-color: #0c5a52;
+}
+
+header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+.food-type-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.menu-under-line {
+    border-top: dashed #cacaca 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#content {
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border: 3px solid #cacaca;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(103, 103, 103, 0.49);
+    transition: ease-out 0.25s;
+}
+
+.food:hover {
+    border: 3px solid #187969;
+    box-shadow: 0px 0px 7px rgb(12, 104, 88);
+}
+
+.icon {
+    width: 100%;
+    height: 85%;
+    margin: 10px;
+    flex: 2.5;
+    border: 3px solid #187969;
+    border-radius: 10px;
+}
+
+.image {
+    padding: 3px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.food-name {
+    color: #187969;
+    font-size: 24px;
+}
+
+.price {
+    font-size: 24px;
+    color: #4b9585;
+    flex: 1;
+    font-family: "Fredoka One";
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.detail {
+    padding-left: 10px;
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Roboto";
+}
+
+.detail > p {
+    color: #72a598;
+    font-size: 18px;
+}
+
+
+
+.home.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+.home-icon{
+    width: 500px;
+}
+
+.home-title{
+    text-align: center;
+    width: 400px;
+    font-size: 60px;
+    font-family: "Story Script", sans-serif;
+    color: #187969;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out{
+    opacity: 0;
+}
+.fade-in{
+    opacity: 1;
+}
+
+.about{
+    width: 100%;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    color: #0c5a52;
+    font-weight: bold;
+}
+
+.about > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    flex: 0.85;
+    border-bottom: rgba(13, 143, 130, 0.8) 3px dashed;
+}
+
+
+.github-icon{
+    width: 70px;
+}
